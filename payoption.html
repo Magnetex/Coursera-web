@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="paystyle.css">
+</head>
+
+<body>
+    <h1>Payment Options</h1>
+        <button class="collapsible">Net Banking</button>
+            <div class="content">
+                
+            </div>
+
+        <button class="collapsible">Debit/Credit Card</button>
+            <div class="content">
+                <div id="A1">
+                Card Number: <input type="text" placeholder="Enter your card number" id="B1" />
+                </div>
+                <p></p>
+                <div id="A2">
+                Expiry Date: <input type="text" placeholder="MM/YYYY" id="B2" />
+                </div>
+                <p></p>
+                <div id="A3">
+                Card Holder Name: <input type="text" placeholder="Name On The Card" id="B3" />
+                </div>
+                <p></p>
+                <div id="A4">
+                CVV: <input type="text" placeholder="xxx" id="B4" />
+                </div>
+                <p></p>
+            </div>
+            
+        <button class="collapsible">UPI</button>
+            <div class="content">
+          
+            </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
